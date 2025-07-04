@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prediction Result</title>
+    <style>
+        body {
+            background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, sans-serif;
+            color: #ffffff;
+            text-align: center;
+            padding-top: 20%;
+            animation: fadeIn 2s ease-in;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            color: #333;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        .result {
+            font-size: 28px;
+            font-weight: bold;
+            margin: 20px auto;
+            max-width: 500px;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border: 2px solid #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
+            animation: fadeIn 2.5s ease-in;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <h2>Credit Card Application Prediction</h2>
+    <div class="result">
+        {% if result == 'Approved' %}
+            <span style="font-size: 36px;">✅</span> Your application is likely to be: <strong>{{ result }}</strong>
+        {% else %}
+            <span style="font-size: 36px;">❌</span> Your application is likely to be: <strong>{{ result }}</strong>
+        {% endif %}
+    </div>
+    <a href="/form"><button>Try Another</button></a>
+</body>
+</html>

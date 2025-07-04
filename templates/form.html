@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Credit Prediction Form</title>
+    <style>
+        body {
+            background-image: url('https://images.unsplash.com/photo-1588776814546-5a1f6d91df2c');
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, sans-serif;
+            color: #fff;
+        }
+        form {
+            margin: 50px auto;
+            width: 400px;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 30px;
+            border-radius: 10px;
+        }
+        input[type="text"], input[type="number"], select {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            border-radius: 5px;
+            border: none;
+        }
+        input[type="submit"] {
+            width: 100%;
+            padding: 12px;
+            margin-top: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        label {
+            font-weight: bold;
+            display: block;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <form action="/predict" method="post">
+        <h2>Enter Applicant Details</h2>
+
+        <label for="CODE_GENDER">Gender:</label>
+        <select name="CODE_GENDER">
+            <option value="0">Male</option>
+            <option value="1">Female</option>
+        </select>
+
+        <label for="FLAG_OWN_CAR">Owns a Car:</label>
+        <select name="FLAG_OWN_CAR">
+            <option value="0">No</option>
+            <option value="1">Yes</option>
+        </select>
+
+        <label for="FLAG_OWN_REALTY">Owns Property:</label>
+        <select name="FLAG_OWN_REALTY">
+            <option value="0">No</option>
+            <option value="1">Yes</option>
+        </select>
+
+        <label for="CNT_CHILDREN">Number of Children:</label>
+        <input type="number" name="CNT_CHILDREN" placeholder="e.g. 0">
+
+        <label for="AMT_INCOME_TOTAL">Annual Income:</label>
+        <input type="number" name="AMT_INCOME_TOTAL" placeholder="e.g. 120000">
+
+        <label for="NAME_INCOME_TYPE">Income Type:</label>
+        <select name="NAME_INCOME_TYPE">
+            <option value="0">Pensioner</option>
+            <option value="1">Student</option>
+            <option value="2">Working</option>
+        </select>
+
+        <label for="NAME_EDUCATION_TYPE">Education Level:</label>
+        <select name="NAME_EDUCATION_TYPE">
+            <option value="0">Academic Degree</option>
+            <option value="1">Higher Education</option>
+            <option value="2">Secondary</option>
+        </select>
+
+        <label for="NAME_HOUSING_TYPE">Housing Type:</label>
+        <select name="NAME_HOUSING_TYPE">
+            <option value="0">House / apartment</option>
+            <option value="1">With parents</option>
+        </select>
+
+        <label for="AGE_YEARS">Age (in years):</label>
+        <input type="number" name="AGE_YEARS" placeholder="e.g. 30" min="18" max="100" required>
+
+        <label for="EMP_YEARS">Employment Duration (in years):</label>
+        <input type="number" name="EMP_YEARS" placeholder="e.g. 3" min="0" max="80" required>
+
+        <label for="CNT_FAM_MEMBERS">Family Size:</label>
+        <input type="number" name="CNT_FAM_MEMBERS" placeholder="e.g. 3">
+
+        <label for="paid_off">Number of Loans Paid Off:</label>
+        <input type="number" name="paid_off" placeholder="e.g. 5">
+
+        <label for="#_of_pastdues">Total Number of Past Dues:</label>
+        <input type="number" name="#_of_pastdues" placeholder="e.g. 1">
+
+        <label for="no_loan">Number of Months with No Loan:</label>
+        <input type="number" name="no_loan" placeholder="e.g. 12"><br><br>
+
+        <input type="submit" value="Predict">
+    </form>
+</body>
+</html>
