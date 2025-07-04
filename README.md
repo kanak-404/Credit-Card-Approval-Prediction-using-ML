@@ -87,10 +87,13 @@ ML_Project/
 
 ---
 
-## ✍️ Author
+## ✍️ Authors
 Kanak Soni
+Vidushi Chhajed
+Saumil Singhal
+Bhavya Katiyar
 
-> Built as a part of ML coursework project
+> Built as a part of ML coursework group project
 
 ---
 
