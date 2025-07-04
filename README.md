@@ -89,8 +89,11 @@ ML_Project/
 
 ## ✍️ Authors
 Kanak Soni
+
 Vidushi Chhajed
+
 Saumil Singhal
+
 Bhavya Katiyar
 
 > Built as a part of ML coursework group project
