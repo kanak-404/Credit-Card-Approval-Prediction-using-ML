@@ -16,16 +16,17 @@ Key components include:
 📄 Project Structure
 
 ML_Project/
-├── README.md                        # Readme file 
-├── app.py                           # Flask application
-├── model.pkl                        # Trained ML model
-├── templates/                       # HTML templates
-│   ├── index.html                   # Project description
-│   ├── form.html                    # User input form
-│   └── result.html                  # Prediction result page
+├── README.md                        # Project documentation
+├── requirements.txt               # Python dependencies
+├── app.py                          # Flask application
+├── model.pkl                       # Trained ML model
+├── templates/                      # HTML templates
+│   ├── index.html                  # Project description
+│   ├── form.html                   # User input form
+│   └── result.html                 # Prediction result page
 ├── Credit_Card_Approval_Prediction.ipynb  # Model training notebook
-├── application_record.csv           # Applicant info dataset
-├── credit_record.csv                # Credit history dataset
+├── application_record.csv         # Applicant info dataset
+├── credit_record.csv              # Credit history dataset
 
 
 🛠️ Technologies Used
@@ -60,9 +61,9 @@ http://127.0.0.1:5000
 - Final model: GradientBoostingClassifier
 - Balanced via SMOTE
 - Feature set includes:
-- Gender, Car/Property ownership, Income
-- Age, Employment, Education
-- Loan repayment history (custom engineered)
+   - Gender, Car/Property ownership, Income
+   - Age, Employment, Education
+   - Loan repayment history (custom engineered)
 
 📆 Future Improvements
 
@@ -73,6 +74,7 @@ http://127.0.0.1:5000
 ✍️ Author
 
 Kanak Soni
+
 Built as a part of ML coursework project
 
 🚫 Disclaimer
