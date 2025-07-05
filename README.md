@@ -105,3 +105,10 @@ Team ID : SWTID1750315383
 
 ## 🚫 Disclaimer
 This tool is for academic and educational purposes only and should not be used for real financial decision-making.
+
+---
+
+## 📝 License
+
+This project is licensed under the [MIT License](LICENSE).
+
